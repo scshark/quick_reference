@@ -1,0 +1,35 @@
+name: 上传reference
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env: # 设置环境变量
+  TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用时区时间）
+
+jobs:
+  build: # 自定义名称
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚜 拉取最新代码
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+          repository: 'scshark/quick_reference'
+
+      - name: ♻️ 编译静态文件
+        run: |
+          echo -e 'REF_URL=https://ref.scshark.com/\nREF_LABEL=网站首页\nREF_FOOTER=备案号：粤ICP备19136083号\nLICENSE=Copyright (c) <b>2023</b> scshark' > .env
+          npm install
+          npm run build
+
+
+      - name: Upload COS
+        uses: zkqiang/tencent-cos-action@v0.1.0
+        with:
+          args: delete -r -f / && upload -r ./dist/ /
+          secret_id: ${{ secrets.SECRET_ID }}
+          secret_key: ${{ secrets.SECRET_KEY }}
+          bucket: ${{ secrets.BUCKET }}
+          region: ap-guangzhou
