@@ -1,8 +1,19 @@
 Quick Reference 
 ===
-## 置顶
+## scshark置顶
 <!--rehype:style=padding-bottom: 23px;-->
-[Ansible](./docs/ansible.md)<!--rehype:style=background: rgb(238 0 0);&class=contributing tag&data-lang=RedHat&data-info=👆看看还缺点儿什么？-->  
+[Golang](./docs/golang.md)<!--rehype:style=background: rgb(39 160 193);-->
+[MySQL](./docs/mysql.md)<!--rehype:style=background: rgb(1 117 143);&class=tag&data-lang=SQL-->
+[Redis](./docs/redis.md)<!--rehype:style=background: rgb(198 47 44);-->
+[nginx](./docs/nginx.md)<!--rehype:style=background: rgb(0 153 0);-->
+[Git](./docs/git.md)<!--rehype:style=background: rgb(215 89 62);-->
+[Markdown](./docs/markdown.md)<!--rehype:style=background: rgb(103 61 156);-->
+[Docker](./docs/docker.md)<!--rehype:style=background: rgb(72 143 223);-->  
+[Dockerfile](./docs/dockerfile.md)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-lang=Docker-->
+[PHP](./docs/php.md)<!--rehype:style=background: rgb(79 91 147);-->
+[Homebrew](./docs/homebrew.md)<!--rehype:style=background: rgb(252 185 87);&class=tag&data-lang=macOS-->
+[Kubernetes](./docs/kubernetes.md)<!--rehype:style=background: rgb(51 113 227);&class=contributing&data-info=👆看看还缺点儿什么？-->
+
 <!--rehype:class=home-card-->
 
 ## 编程
