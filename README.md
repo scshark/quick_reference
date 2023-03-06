@@ -13,6 +13,7 @@ Quick Reference
 [PHP](./docs/php.md)<!--rehype:style=background: rgb(79 91 147);-->
 [Homebrew](./docs/homebrew.md)<!--rehype:style=background: rgb(252 185 87);&class=tag&data-lang=macOS-->
 [Kubernetes](./docs/kubernetes.md)<!--rehype:style=background: rgb(51 113 227);&class=contributing&data-info=👆看看还缺点儿什么？-->
+[Yarn](./docs/yarn.md)<!--rehype:style=background: rgb(33 136 182);-->
 
 <!--rehype:class=home-card-->
 
